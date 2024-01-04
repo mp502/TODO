@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 10fr;
+}
+
+nav {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 10px 0;
+    background-color: rgb(13, 13, 13);
+    color: white;
+}
+
+.main {
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+#add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input>input {
+    border: none;
+    background-color: rgb(38, 38, 38);
+    color: white;
+}
+
+.input>.task-name {
+    width: 400px;
+    height: 35px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.input>button {
+    width: Hug(84px);
+    height: Hug(52px);
+    padding: 16px;
+    border-radius: 8px;
+    gap: 8px;
+    background-color: #1E6F9F;
+    color: white;
+    border: none;
+}
+
+.input>button:active {
+    background-color: green;
+}
+
+.task-body>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 40px;
+    margin-inline: 235px;
+}
+
+.count {
+    background-color: rgb(97, 95, 95);
+    padding: 3px 5px;
+    margin-inline: 5px;
+    border-radius: 30%;
+}
+
+.high-priority {
+    color: #8284FA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.todo {
+    color: #4EA8DE;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.no-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.no-task div:last-child {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(128, 128, 128);
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.edit,
+.save {
+    display: inline-block;
+    background-color: #1E6F9F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.save {
+    display: none;
+}
+
+.started-task .task {
+    position: relative;
+}
+
+.started-task .task .edit,
+.started-task .task .save {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.strikethrough{
+    text-decoration: line-through;
+}
